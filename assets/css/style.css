@@ -1,0 +1,618 @@
+/* TEMA WARNA: Putih (#FFFFFF), Hitam (#000000), Oranye (#FF6B35) */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFFFFF;
+    color: #000000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: #FFFFFF !important;
+    border-bottom: 2px solid #FF6B35;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 10px 0;
+}
+
+.navbar-brand {
+    color: #FF6B35 !important;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    color: #000000 !important;
+    font-weight: 500;
+    margin: 0 5px;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #FF6B35 !important;
+    transform: translateY(-2px);
+}
+
+/* HERO SECTION */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../img/hero-hair.jpg') center/cover no-repeat;
+    height: 70vh;
+    min-height: 500px;
+    position: relative;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content {
+    padding: 40px 20px;
+    max-width: 800px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.hero-content p {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+    color: #FFFFFF;
+}
+
+.btn-hero {
+    background-color: #FF6B35;
+    color: #FFFFFF;
+    border: none;
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+    box-shadow: 0 4px 15px rgba(255,107,53,0.3);
+}
+
+.btn-hero:hover {
+    background-color: #E55A2B;
+    color: #FFFFFF;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(255,107,53,0.4);
+}
+
+/* BUTTONS */
+.btn-primary {
+    background-color: #FF6B35;
+    border-color: #FF6B35;
+    color: #FFFFFF;
+    border-radius: 30px;
+    padding: 10px 25px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #E55A2B;
+    border-color: #E55A2B;
+    color: #FFFFFF;
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background-color: #000000;
+    border-color: #000000;
+    color: #FFFFFF;
+    border-radius: 30px;
+    padding: 10px 25px;
+}
+
+.btn-secondary:hover {
+    background-color: #333333;
+    border-color: #333333;
+    color: #FFFFFF;
+}
+
+/* CARDS */
+.card {
+    border: 1px solid #DDDDDD;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+
+.card-header {
+    background-color: #000000;
+    color: #FFFFFF;
+    font-weight: bold;
+    border-bottom: 3px solid #FF6B35;
+    padding: 15px 20px;
+}
+
+/* SERVICE ICONS */
+.service-icon {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #FF6B35;
+    margin: 0 auto 15px;
+    transition: all 0.3s ease;
+    background-color: #f8f9fa;
+}
+
+.service-icon:hover {
+    transform: scale(1.05);
+    border-color: #000000;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.service-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ALERTS */
+.alert {
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+.alert-info {
+    background-color: rgba(255,107,53,0.1);
+    border-left: 5px solid #FF6B35;
+    color: #000000;
+}
+
+.alert-success {
+    background-color: rgba(40,167,69,0.1);
+    border-left: 5px solid #28a745;
+    color: #000000;
+}
+
+.alert-warning {
+    background-color: rgba(255,193,7,0.1);
+    border-left: 5px solid #ffc107;
+    color: #000000;
+}
+
+.alert-danger {
+    background-color: rgba(220,53,69,0.1);
+    border-left: 5px solid #dc3545;
+    color: #000000;
+}
+
+/* SECTIONS */
+.section-welcome {
+    background-color: #FFFFFF;
+    padding: 80px 0;
+}
+
+.section-welcome h2 {
+    color: #000000;
+    font-weight: bold;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.section-welcome h2:after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: #FF6B35;
+    margin: 15px auto 0;
+}
+
+/* BADGES */
+.badge {
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+.badge-orange {
+    background-color: #FF6B35;
+    color: white;
+}
+
+.badge-black {
+    background-color: #000000;
+    color: white;
+}
+
+/* ANIMATIONS */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.6s ease-out;
+}
+
+/* LOADING */
+.spinner-border {
+    width: 3rem;
+    height: 3rem;
+}
+
+/* CUSTOM SCROLLBAR */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #FF6B35;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #E55A2B;
+}
+
+/* FORM STYLING */
+.form-control {
+    border: 2px solid #DDDDDD;
+    border-radius: 8px;
+    padding: 12px 15px;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #FF6B35;
+    box-shadow: 0 0 0 0.3rem rgba(255,107,53,0.25);
+    outline: none;
+}
+
+/* TESTIMONIAL STYLING */
+.testimonial-card {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    position: relative;
+}
+
+.testimonial-card:before {
+    content: '"';
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    font-size: 100px;
+    color: #FF6B35;
+    opacity: 0.1;
+    font-family: Georgia, serif;
+}
+
+/* About Page Styles */
+.about-hero {
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), 
+                url('../images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    color: white;
+    text-align: center;
+}
+
+.value-card {
+    transition: all 0.3s ease;
+}
+
+.value-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.team-img-placeholder {
+    background: linear-gradient(45deg, #FF6B35, #FF8E53);
+}
+
+/* ============================================
+   PERBAIKAN STYLE ABOUT PAGE - FASILITAS & TIM
+   ============================================ */
+
+/* FACILITIES SECTION - PERBAIKAN */
+.facilities-section {
+    margin-bottom: 60px;
+}
+
+.facility-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    height: 100%;
+    margin-bottom: 30px;
+    border: 1px solid #f0f0f0;
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+.facility-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.facility-image-container {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.facility-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.facility-card:hover .facility-image {
+    transform: scale(1.05);
+}
+
+.facility-content {
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.facility-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.facility-description {
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+    flex: 1;
+}
+
+/* TEAM SECTION - PERBAIKAN */
+.team-section {
+    margin-bottom: 60px;
+}
+
+.team-card {
+    background: white;
+    border-radius: 15px;
+    padding: 30px 25px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    height: 100%;
+    margin-bottom: 30px;
+    border-top: 4px solid #FF6B35;
+    border: 1px solid #f0f0f0;
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+.team-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.team-avatar-container {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 20px;
+    border: 5px solid #FF6B35;
+    background: linear-gradient(45deg, #FF6B35, #FF8E53);
+}
+
+.team-avatar {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.team-name {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 5px;
+}
+
+.team-role {
+    color: #FF6B35;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.team-bio {
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    flex: 1;
+}
+
+/* TEAM AVATAR PLACEHOLDER - Untuk inisial */
+.team-avatar-initials {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+/* Social Icons */
+.team-social {
+    margin-top: 15px;
+}
+
+.team-social a {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    background: #f8f9fa;
+    border-radius: 50%;
+    color: #666;
+    margin: 0 5px;
+    transition: all 0.3s ease;
+}
+
+.team-social a:hover {
+    background: #FF6B35;
+    color: white;
+    transform: translateY(-3px);
+}
+
+/* GRID SYSTEM PERBAIKAN */
+.row.equal-height {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row.equal-height > [class*='col-'] {
+    display: flex;
+    flex-direction: column;
+}
+
+/* PERBAIKAN UTAMA: Pastikan Bootstrap grid berfungsi dengan baik */
+.row > [class*='col-'] {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+/* Perbaikan untuk memastikan 3 kolom berjajar */
+.col-lg-4, .col-md-4, .col-md-6, .col-sm-6 {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .hero {
+        height: 60vh;
+        min-height: 400px;
+    }
+    
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+    
+    .hero-content p {
+        font-size: 1rem;
+    }
+    
+    .btn-hero {
+        padding: 12px 30px;
+        font-size: 1rem;
+    }
+    
+    .service-icon {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .section-welcome {
+        padding: 50px 0;
+    }
+    
+    /* About page responsive */
+    .facility-image-container {
+        height: 180px;
+    }
+    
+    .team-avatar-container {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .team-avatar-initials {
+        font-size: 2.5rem;
+    }
+    
+    .team-card {
+        padding: 20px 15px;
+    }
+    
+    /* Grid responsive untuk 2 kolom di tablet */
+    .col-md-4, .col-md-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    
+    /* Team di mobile jadi 1 kolom */
+    .team-section .col-sm-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero {
+        height: 50vh;
+        min-height: 350px;
+    }
+    
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+    
+    .btn-hero {
+        padding: 10px 25px;
+        font-size: 0.9rem;
+        margin-bottom: 10px;
+    }
+    
+    /* Mobile kecil: 1 kolom untuk semua */
+    .col-sm-6, .col-md-4, .col-md-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+/* FIX untuk Bootstrap 4.6 yang mungkin konflik */
+.row::after {
+    display: block;
+    content: "";
+    clear: both;
+}
